@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./output/tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body class="bdy h-screen">
+    <nav>
+        <div class="container mx-auto mt-5 px-4 py-2 flex justify-between items-center">
+            <div class=""><a class="text-2xl font-medium no-underline" href="#">Wallet-Manager</a></div>
+            <a href="./index.html">
+                <h4 class="font-bold">Back To Home<i class="fa-solid fa-arrow-left"
+                        style="margin-left: 8px;font-size: 14px;"></i></h4>
+            </a>
+
+        </div>
+    </nav>
+    <div  class="flex flex-col justify-between items-center mt-7 ">
+
+        <div>
+            <div class="container mx-auto mt-5 px-4 py-2 flex justify-between items-center">
+                <div class="flex flex-col gap-5">
+                    <h3 class="text-4xl font-extrabold other_h">
+                        Login 
+                        to your account
+                    </h3>
+                </div>
+            </div>
+            <div id="login_parent" class="container mx-auto mt-7 px-16 py-16 flex justify-center items-center shadow-2xl rounded-xl">
+                <div class="flex flex-col gap-5"> 
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="email" class="text-base">Email</label>
+                                <input onblur="Get_VAL_U()" type="email" name="email" id="email"
+                                    class="border-2 border-gray-200 rounded-full px-4 py-2 focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="password" class="text-base">Password</label>
+                                <input onblur="Get_VAL_P()" type="password" name="password" id="password"
+                                    class="border-2 border-gray-200 rounded-full px-4 py-2 focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <button onclick="Login()" type="submit" name="login"
+                                    class="bg-black text-white rounded-full px-4 py-2">Login</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+        <div id="alert" class="h-40 w-96 justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl p-10">
+            <h4 class="text-xl font-bold mr-3">Wrong Username or Password !</h4>
+            <i onclick="Close_Alert()" class="fa-solid fa-circle-xmark" style="cursor: pointer; font-size: 24px;"></i>
+        </div>
+        <script src="./login.js"></script>
+
+
+</body>
+
+</html>

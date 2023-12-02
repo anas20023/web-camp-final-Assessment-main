@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.bdy
+{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cart
+{
+    margin: 10px;
+    font-size: 16px;
+    color: #232323;
+}
+.h
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+.im
+{
+    width: 502px;
+    height: 325px;
+}
+.head
+{
+    line-height: 60px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.other_h
+{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.img_bg
+{
+    margin-top: 30px;
+    width: 675px;
+    height: 507px;
+}
+.img_login
+{
+    width: 500px;
+    height: 500px;
+}
+#alert
+{
+    display: none;
+}
