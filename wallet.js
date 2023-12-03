@@ -4,51 +4,39 @@ var dep_prev = 0,
   wd,
   curr_b = 1340;
 
-
-  // For Diposite 
-
-
 function GetValue() {
   dip = document.getElementById("d_add").value;
 }
+
 function Click_Dip() {
   if (dip > 0) {
     dep_prev += parseInt(dip);
     curr_b += parseInt(dip);
     document.getElementById("pre_dip").innerHTML = dep_prev;
     document.getElementById("cur_b").innerHTML = curr_b;
-  }
-  else
-  {
-    alert("Amount Must Be Possitive!");
+  } else {
+    alert("Amount Must Be Positive!");
   }
 }
 
-  // For Withdraw
-
-function GetValue_W()
-{
-    wd = document.getElementById("w_add").value;
+function GetValue_W() {
+  wd = document.getElementById("wd_add").value;
 }
 
-function Click_Wth()
-{
-    if(wd>0)
-    {
-        if(wd<=curr_b)
-        {
-            wd_prev += parseInt(wd);
-            curr_b -= parseInt(wd);
-            document.getElementById("pre_wd").innerHTML = wd_prev;
-            document.getElementById("cur_b").innerHTML = curr_b;
-        }
-        else
-        {
-            alert("Insufficient Balance!");
-        }
+function Click_Wth() {
+  if (wd > 0) {
+    if (wd <= curr_b) {
+      wd_prev += parseInt(wd);
+      curr_b -= parseInt(wd);
+      document.getElementById("pre_wd").innerHTML = wd_prev;
+      document.getElementById("cur_b").innerHTML = curr_b;
+      alert("Amount Withdrawn Successfully");
     }
     else
     {
-        alert("Amount Must Be Possitive!");
+      alert("Insufficient Balance!");
     }
+  } else {
+    alert("Amount Must Be Positive!");
+  }
 }
