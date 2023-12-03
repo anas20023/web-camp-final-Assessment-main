@@ -14,6 +14,7 @@ function Click_Dip() {
     curr_b += parseInt(dip);
     document.getElementById("pre_dip").innerHTML = dep_prev;
     document.getElementById("cur_b").innerHTML = curr_b;
+    document.getElementById("d_add").value="";
   } else {
     alert("Amount Must Be Positive!");
   }
@@ -30,7 +31,7 @@ function Click_Wth() {
       curr_b -= parseInt(wd);
       document.getElementById("pre_wd").innerHTML = wd_prev;
       document.getElementById("cur_b").innerHTML = curr_b;
-      alert("Amount Withdrawn Successfully");
+      document.getElementById("wd_add").value="";
     }
     else
     {
