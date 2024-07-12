@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./output/tailwind.css">
+    <link rel="stylesheet" href="./dist/tailwind.css">
     <link rel="stylesheet" href="style.css">
     <title>Wallet Manager</title>
 </head>
 
-<body class="bdy">
-    <nav class="flex mt-8 bg-white justify-between items-center">
+<body class="bdy dark:bg-gray-800">
+    <nav class="flex mt-8 bg-white dark:bg-gray-900 justify-between items-center">
 
-        <div class=""><a class="text-2xl font-medium no-underline" href="#">Wallet-Manager</a></div>
-        <div class="border-2 border-gray-200 rounded-full"><a class="no-underline" href="#"><i
+        <div class=""><a class="text-2xl text-gray-800 dark:text-white font-medium no-underline" href="#">Wallet-Manager</a></div>
+        <div class="border-2 border-gray-200 dark:border-gray-800 rounded-full"><a class="no-underline" href="#"><i
                     class="fa-solid fa-bag-shopping cart"></i></a></div>
     </nav>
 
@@ -28,10 +28,10 @@
             <h1 class="text-6xl text-left head font-black">Manage <br> money smartly</h1>
             <p class="text-left text-sm mt-8">Meet the only spend management <br> platform and corporate card.</p>
             <a href="./login.html" class="text-left mt-8 font-medium shadow-inner w-1/2 border-t-4"><span
-                    class=" bg-black px-4 py-2 mr-2"><i class="fa-solid fa-arrow-right"
-                        style="color: #ffffff; font-size: 16px;"></i></span>Try Your Wallet Now</a>
+                    class=" bg-black dark:bg-white px-4 py-2 mr-2"><i class="fa-solid fa-arrow-right text-white dark:text-gray-800"
+                        style="font-size: 16px;"></i></span>Try Your Wallet Now</a>
         </div>
-        <div class="">
+        <div>
             <img class="im" src="./images/header card.png" alt="">
         </div>
     </div>
@@ -43,7 +43,7 @@
 
     <div class="w-full h-52 mt-36 mb-10 flex flex-row justify-between items-center">
         <div class="flex flex-col gap-5">
-            <h3 class="text-4xl font-extrabold other_h">
+            <h3 class="text-4xl font-extrabold other_h dark:text-white">
                 Hot <i class="fa-solid fa-fire" style="color: #ff5900; font-size: 30px;"></i> <br>
                 deals for you
             </h3>
